@@ -35,7 +35,7 @@ cd ../kline
 
 php -f kline_fill_via_websocket.php recreate
 
-nohup php -f kline_fill_via_websocket.php >> kline_log &
+nohup php -f kline_fill_via_websocket.php >> ../kline_log &
 
 php -f kline_check_and_refill.php
 ```
