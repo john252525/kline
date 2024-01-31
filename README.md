@@ -1,5 +1,5 @@
 # kline
-
+```
 mysql: CREATE DATABASE `kline`
 
 cd /home/kline
@@ -32,3 +32,4 @@ cd ..
 nohup php -f kline_fill_via_websocket.php >> kline_log &
 
 php -f kline_check_and_refill.php
+```
