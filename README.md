@@ -2,7 +2,11 @@
 ```
 mysql: CREATE DATABASE `kline`
 
-cd /home/kline
+cd /home
+
+mkdir kline
+
+cd kline
 
 cat > .env.kline.php <<EOF
 <?php
@@ -27,7 +31,9 @@ composer require binance/binance-connector-php
 
 composer require colshrapnel/safemysql
 
-cd ..
+cd ../kline
+
+php -f kline_fill_via_websocket.php recreate
 
 nohup php -f kline_fill_via_websocket.php >> kline_log &
 
