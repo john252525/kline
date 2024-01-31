@@ -13,7 +13,7 @@ cat > .env.kline.php <<EOF
     'charset' => 'utf8mb4'
 );
 define('VERBOSE', true);
-define('BINANCE_SPOT_KLINE_TBL_PREFIX', 'z_');  // binance_spot_kline_1s_btc_usdt  // binance_spot_kline_1s_btc_usdt_open_20240121
+define('BINANCE_SPOT_KLINE_TBL_PREFIX', 'z_');
 define('BINANCE_SPOT_KLINE_TBL_BY_DAYS', false);
 EOF
 
